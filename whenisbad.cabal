@@ -2,12 +2,12 @@ name:                whenisbad
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/githubuser/whenisbad#readme
-license:             BSD3
+homepage:            https://github.com/aaronshim/whenisbad
+license:             MIT
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2017 Author name here
+author:              Haohang Xu and Aaron Shim
+maintainer:          aaron@shim.space
+copyright:           2017 Haohang Xu and Aaron Shim
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
@@ -18,7 +18,7 @@ library
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
                      , aeson
-                     , servant-server
+                     , servant-server >= 0.10
                      , wai
                      , warp
   default-language:    Haskell2010
@@ -46,4 +46,4 @@ test-suite whenisbad-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/whenisbad
+  location: https://github.com/aaronshim/whenisbad
