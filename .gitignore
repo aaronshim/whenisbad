@@ -1,3 +1,4 @@
+# Backend (Haskell/Stack) stuff
 dist
 dist-*
 cabal-dev
@@ -17,3 +18,10 @@ cabal.sandbox.config
 *.eventlog
 .stack-work/
 cabal.project.local
+
+# Frontend (Elm) stuff
+client/Api.elm
+client/elm-stuff/
+client/tests.js
+assets/index.html
+

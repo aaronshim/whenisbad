@@ -2,7 +2,7 @@ name:                whenisbad
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/aaronshim/whenisbad
+homepage:            https://github.com/aaronshim/whenisbad#readme
 license:             MIT
 license-file:        LICENSE
 author:              Haohang Xu and Aaron Shim
@@ -15,10 +15,11 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Lib, Api
   build-depends:       base >= 4.7 && < 5
                      , aeson
                      , servant-server >= 0.10
+                     , servant-elm
                      , wai
                      , warp
   default-language:    Haskell2010

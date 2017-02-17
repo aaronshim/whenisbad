@@ -12,27 +12,23 @@ import Network.Wai
 import Network.Wai.Handler.Warp
 import Servant
 
-data User = User
-  { userId        :: Int
-  , userFirstName :: String
-  , userLastName  :: String
-  } deriving (Eq, Show)
-
-$(deriveJSON defaultOptions ''User)
-
-type API = "users" :> Get '[JSON] [User]
+import Api
 
 startApp :: IO ()
-startApp = run 8080 app
+startApp = run 3000 app
 
 app :: Application
 app = serve api server
 
-api :: Proxy API
+api :: Proxy APIWithAssets
 api = Proxy
 
-server :: Server API
+server :: Server APIWithAssets
 server = return users
+    :<|> serveAssets
+    :<|> serveAssets
+  where
+    serveAssets = serveDirectoryFileServer "assets"
 
 users :: [User]
 users = [ User 1 "Isaac" "Newton"
