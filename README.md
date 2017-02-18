@@ -1,6 +1,9 @@
 # whenisbad
 A scheduling assistant.
 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Motivation
 We wanted to see what it was like to do a full-stack web project using as Haskelly stack as possible. We chose `servant` for the backend since it seemed to bring the most novel paradigms (by defining the API at the type level and therefore leveraging the type system that makes Haskell special). We chose Elm for the frontend because it was the most beginner-friendly (and seemingly popular) pure and reactive way to write frontend.
 
