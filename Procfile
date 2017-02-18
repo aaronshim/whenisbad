@@ -1,1 +1,1 @@
-web: stack exec -- whenisbad-exe
+web: whenisbad-exe

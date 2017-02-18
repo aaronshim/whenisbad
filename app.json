@@ -1,0 +1,32 @@
+{
+  "name": "WhenIsBad",
+  "description": "A Scheduling Assistant",
+  "keywords": [
+    "haskell",
+    "elm"
+  ],
+  "website": "https://github.com/aaronshim/whenisbad",
+  "repository": "https://github.com/aaronshim/whenisbad",
+  "env": {
+    "PORT": {
+      "description": "Port number for the app to run on",
+      "value": "80"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Free"
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/aaronshim/heroku-buildpack-stack"
+    }
+  ]
+}

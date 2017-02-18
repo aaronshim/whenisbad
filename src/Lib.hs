@@ -14,8 +14,10 @@ import Servant
 
 import Api
 
-startApp :: IO ()
-startApp = run 3000 app
+type PortNumber = Int
+
+startApp :: PortNumber -> IO ()
+startApp port = run port app
 
 app :: Application
 app = serve api server
